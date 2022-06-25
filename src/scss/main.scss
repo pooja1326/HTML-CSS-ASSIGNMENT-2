@@ -1,0 +1,333 @@
+@import "_mixin";
+@import "_var";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(218, 112, 112);
+    background-image: linear-gradient(to bottom right, red, blue);
+
+
+}
+
+.row1 {
+    width: 100%;
+    display: flex;
+
+    .item1 {
+        @include icon;
+        background-color: $bgColor;
+        width: 17%;
+        height: 23px;
+    }
+}
+
+.row3 {
+    width: 100%;
+    display: flex;
+
+    .item8 {
+        @include icon;
+        background-color: white;
+        width: 100%;
+        margin-top: 15px;
+
+    }
+
+    .icon {
+        font-size: 50px;
+        align-items: flex-start;
+    }
+
+    h5 {
+        color: grey;
+    }
+
+}
+
+.row2 {
+    width: 100%;
+    display: flex;
+
+    .item6 {
+        /* background-image: url("assest/tacos.jpeg"); */
+
+        margin-left: 22px;
+        width: 100%;
+        height: 361px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.row4 {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    .item7 {
+        background-color: $bgColor;
+        margin-left: 16px;
+        width: 92%;
+
+
+        /* margin-block: auto; */
+        margin-bottom: 15px;
+    }
+
+    .item10 {
+        background-color: $bgColor;
+        margin-left: 16px;
+        width: 92%;
+
+
+        /* margin-block: auto; */
+        margin-bottom: 15px;
+    }
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+.main {
+    display: grid;
+    width: 99%;
+    padding: 11px;
+    margin: 9px;
+    /* height: 8%; */
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    row-gap: 33px;
+    margin-left: 12px;
+    column-gap: 0px;
+
+
+}
+
+.footer {
+    height: 87%;
+    width: 88%;
+
+}
+
+
+.row5 {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    background-color: white;
+
+    .row5-item1{
+  background-image: url("https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg");
+    }
+
+}
+//     background-image: url("asset/nature-10.jpeg");
+
+
+//     background-repeat: no-repeat;
+//     background-color: white;
+//     display: grid;
+//     padding: 73px;
+//     padding-top: 75px;
+//     margin-left: 25px;
+//     margin-top: 10px;
+
+//     margin-right: 25px;
+
+//     .data {
+//         margin-left: 27%;
+//         font-weight: bold;
+//         font-family: Arial, Helvetica, sans-serif
+//     }
+
+//     button {
+//         background: $bgColor;
+//         border: 0;
+//         padding: 10px 20px;
+
+//     }
+// }
+
+
+
+
+
+
+.text {
+    font-weight: 800;
+    margin-top: -178px;
+    margin-left: 30px;
+
+
+
+}
+
+
+
+
+
+.row7 {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    .item11 {
+        @include dollarbox;
+        margin-left: 27;
+
+    }
+
+    .item12 {
+        @include dollarbox;
+        margin-right: 25px;
+    }
+}
+
+h4 {
+    white-space: nowrap;
+    font-family: system-ui;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+
+
+    @media (max-width:480px) {
+.container{
+    padding: 35px ;
+    padding-left: 20px;
+
+}
+
+.row1{
+          width:40%;
+          display: block;    
+          font-size: 5px;  
+          .item1{
+            width:100%;
+        }
+
+}
+
+.row2{
+    flex-direction: column;
+    width: 92%;
+    .item6{
+     width:98%;
+
+    }
+
+}
+.row3{
+    width:93%;
+    display: flex;
+    // align-items: center;
+    flex-direction: column;
+    .item8{
+        width:99%;
+        margin: 16px;
+
+    }
+
+
+}
+.row4{
+    flex-direction: inherit;
+    width:100%;
+    .item7{
+        display: block;
+        margin-left: 16px;
+        width: 100%;
+        height: 100%
+
+        /* margin-block: auto; */
+         margin-bottom 5px;
+        margin-top: 33px;
+    }
+    .item10{
+        margin-left: 16px;
+        width: 100%;
+        height: 100%
+
+        /* margin-block: auto; */
+         margin-bottom 5px;
+        margin-top: 33px;
+
+    }
+
+    }
+
+
+
+
+
+.row5{
+    padding:30px;
+    margin-left:17px;
+}
+
+
+.main{
+    display:flex;
+    flex-direction: column;
+    row-gap: 27px;
+
+    width:100%;
+    margin-left: 1px;
+    .footer{
+        width:93%;
+        height:30%;
+    }
+
+}
+    }
+
+
+
+
+
+
+
+@media (min-width:481) and (max-width:1023px){
+    .main{
+        display: grid;
+width: 98%;
+padding: 10px;
+margin: 19px;
+/* height: 8%; */
+
+grid-template-columns: repeat(4, 248px);
+
+
+    }
+
+
+}

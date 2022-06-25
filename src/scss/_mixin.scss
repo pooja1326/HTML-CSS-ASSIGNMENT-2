@@ -1,0 +1,22 @@
+@mixin dollarbox {
+    background: linear-gradient(to right, red, yellow);
+    justify-content: space-evenly;
+    position: relative;
+    /* border: 2px solid black; */
+    margin: 37px;
+    width: 60%;
+    height: 12px;
+
+}
+
+@mixin  icon{
+    justify-content: space-evenly;
+    position: relative;
+
+    margin: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
