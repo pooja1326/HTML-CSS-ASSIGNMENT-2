@@ -12,7 +12,9 @@ body {
     height: 100%;
     background-color: rgb(218, 112, 112);
     background-image: linear-gradient(to bottom right, red, blue);
-
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-bottom: 3px;
 
 }
 
@@ -20,13 +22,17 @@ body {
     width: 100%;
     display: flex;
 
-    .item1 {
-        @include icon;
-        background-color: $bgColor;
-        width: 17%;
-        height: 23px;
-    }
+    align-items: stretch;
+    justify-content: space-between;
 }
+
+.item1 {
+    @include icon;
+    background-color: $bgColor;
+    width: 17%;
+    height: 23px;
+}
+
 
 .row3 {
     width: 100%;
@@ -106,12 +112,6 @@ body {
 
 }
 
-
-
-
-
-
-
 .main {
     display: grid;
     width: 99%;
@@ -121,7 +121,7 @@ body {
     grid-template-rows: 50% 50%;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15px;
-    row-gap: 33px;
+    row-gap: 4px;
     margin-left: 12px;
     column-gap: 0px;
 
@@ -137,59 +137,37 @@ body {
 
 .row5 {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 32% 51%;
     grid-template-rows: 100%;
     background-color: white;
+    padding: 29px;
+    margin-left: 21px;
+    margin-right: 24px;
 
-    .row5-item1{
-  background-image: url("https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg");
+    .row5-item1 {
+        margin-top: 10px;
     }
 
+    .row5-item2 {
+        padding: 50px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    button {
+        background: $bgColor;
+        border: 0;
+        padding: 10px 20px;
+
+    }
 }
-//     background-image: url("asset/nature-10.jpeg");
-
-
-//     background-repeat: no-repeat;
-//     background-color: white;
-//     display: grid;
-//     padding: 73px;
-//     padding-top: 75px;
-//     margin-left: 25px;
-//     margin-top: 10px;
-
-//     margin-right: 25px;
-
-//     .data {
-//         margin-left: 27%;
-//         font-weight: bold;
-//         font-family: Arial, Helvetica, sans-serif
-//     }
-
-//     button {
-//         background: $bgColor;
-//         border: 0;
-//         padding: 10px 20px;
-
-//     }
-// }
-
-
-
-
-
 
 .text {
     font-weight: 800;
     margin-top: -178px;
     margin-left: 30px;
 
-
-
 }
-
-
-
-
 
 .row7 {
     width: 100%;
@@ -200,7 +178,7 @@ body {
 
     .item11 {
         @include dollarbox;
-        margin-left: 27;
+
 
     }
 
@@ -214,117 +192,141 @@ h4 {
     white-space: nowrap;
     font-family: system-ui;
     font-size: 24px;
+    margin: 16px;
     font-family: Arial, Helvetica, sans-serif
 }
 
 
 
 
-    @media (max-width:480px) {
-.container{
-    padding: 35px ;
-    padding-left: 20px;
 
-}
 
-.row1{
-          width:40%;
-          display: block;    
-          font-size: 5px;  
-          .item1{
-            width:100%;
+
+
+
+@media (max-width:480px) {
+    .container {
+        padding: 25px;
+        padding-left: 29px;
+
+    }
+
+    .row1 {
+        width: 47%;
+        display: block;
+        font-size: 5px;
+        margin-left: 96px;
+
+        .item1 {
+            width: 100%;
         }
 
-}
+    }
 
-.row2{
-    flex-direction: column;
-    width: 92%;
-    .item6{
-     width:98%;
+    .row2 {
+        flex-direction: column;
+        width: 92%;
+
+        .item6 {
+            width: 98%;
+
+        }
 
     }
 
-}
-.row3{
-    width:93%;
-    display: flex;
-    // align-items: center;
-    flex-direction: column;
-    .item8{
-        width:99%;
-        margin: 16px;
+    .row3 {
+        width: 93%;
+        display: flex;
+        // align-items: center;
+        flex-direction: column;
+
+        .item8 {
+            width: 99%;
+            margin: 16px;
+
+        }
+
+
+    }
+
+    .row4 {
+        flex-direction: inherit;
+        width: 100%;
+
+        .item7 {
+            display: block;
+            margin-left: 16px;
+            width: 100%;
+            height: 100%
+                /* margin-block: auto; */
+                margin-bottom 5px;
+            margin-top: 33px;
+        }
+
+        .item10 {
+            margin-left: 16px;
+            width: 100%;
+            height: 100%
+                /* margin-block: auto; */
+                margin-bottom 5px;
+            margin-top: 33px;
+
+        }
 
     }
 
 
-}
-.row4{
-    flex-direction: inherit;
-    width:100%;
-    .item7{
+
+
+
+    .row5 {
+
+        margin-left: 17px;
+        width: 92%;
         display: block;
-        margin-left: 16px;
+
+        width: 80%;
+
+        .row5-item1 {}
+
+        .row5-item2 {
+            font-family: Arial, Helvetica, sans-serif;
+            padding:2px;
+        }
+    }
+
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+
         width: 100%;
-        height: 100%
+        margin-left: 1px;
 
-        /* margin-block: auto; */
-         margin-bottom 5px;
-        margin-top: 33px;
-    }
-    .item10{
-        margin-left: 16px;
-        width: 100%;
-        height: 100%
-
-        /* margin-block: auto; */
-         margin-bottom 5px;
-        margin-top: 33px;
+        .footer {
+            width: 93%;
+            height: 30%;
+        }
 
     }
-
-    }
-
-
-
-
-
-.row5{
-    padding:30px;
-    margin-left:17px;
 }
 
 
-.main{
-    display:flex;
-    flex-direction: column;
-    row-gap: 27px;
-
-    width:100%;
-    margin-left: 1px;
-    .footer{
-        width:93%;
-        height:30%;
-    }
-
-}
-    }
 
 
 
 
 
-
-
-@media (min-width:481) and (max-width:1023px){
-    .main{
+@media (min-width:481) and (max-width:1023px) {
+    .main {
         display: grid;
-width: 98%;
-padding: 10px;
-margin: 19px;
-/* height: 8%; */
+        width: 98%;
+        padding: 10px;
+        margin: 19px;
+        /* height: 8%; */
 
-grid-template-columns: repeat(4, 248px);
+        grid-template-columns: repeat(4, 248px);
 
 
     }

@@ -9,13 +9,19 @@ body {
   height: 100%;
   background-color: rgb(218, 112, 112);
   background-image: linear-gradient(to bottom right, red, blue);
+  padding-right: 21px;
+  padding-left: 21px;
+  padding-bottom: 3px;
 }
 
 .row1 {
   width: 100%;
   display: flex;
+  align-items: stretch;
+  justify-content: space-between;
 }
-.row1 .item1 {
+
+.item1 {
   justify-content: space-evenly;
   position: relative;
   margin: 24px;
@@ -105,7 +111,7 @@ body {
   grid-template-rows: 50% 50%;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 15px;
-  row-gap: 33px;
+  row-gap: 4px;
   margin-left: 12px;
   -moz-column-gap: 0px;
        column-gap: 0px;
@@ -118,12 +124,25 @@ body {
 
 .row5 {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 32% 51%;
   grid-template-rows: 100%;
   background-color: white;
+  padding: 29px;
+  margin-left: 21px;
+  margin-right: 24px;
 }
 .row5 .row5-item1 {
-  background-image: url("https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg");
+  margin-top: 10px;
+}
+.row5 .row5-item2 {
+  padding: 50px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.row5 button {
+  background: #ffc600;
+  border: 0;
+  padding: 10px 20px;
 }
 
 .text {
@@ -141,20 +160,13 @@ body {
 }
 .row7 .item11 {
   background: linear-gradient(to right, red, yellow);
-  justify-content: space-evenly;
-  position: relative;
-  /* border: 2px solid black; */
-  margin: 37px;
+  margin: 22px;
   width: 60%;
   height: 12px;
-  margin-left: 27;
 }
 .row7 .item12 {
   background: linear-gradient(to right, red, yellow);
-  justify-content: space-evenly;
-  position: relative;
-  /* border: 2px solid black; */
-  margin: 37px;
+  margin: 22px;
   width: 60%;
   height: 12px;
   margin-right: 25px;
@@ -164,19 +176,21 @@ h4 {
   white-space: nowrap;
   font-family: system-ui;
   font-size: 24px;
+  margin: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 35px;
-    padding-left: 20px;
+    padding: 25px;
+    padding-left: 29px;
   }
 
   .row1 {
-    width: 40%;
+    width: 47%;
     display: block;
     font-size: 5px;
+    margin-left: 96px;
   }
   .row1 .item1 {
     width: 100%;
@@ -219,8 +233,14 @@ h4 {
   }
 
   .row5 {
-    padding: 30px;
     margin-left: 17px;
+    width: 92%;
+    display: block;
+    width: 80%;
+  }
+  .row5 .row5-item2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px;
   }
 
   .main {
